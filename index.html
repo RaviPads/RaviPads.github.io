@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhythm Homeocare | Natural Healing & Holistic Care</title>
+    <meta name="description"
+        content="Experience natural healing through personalized homeopathic treatments at Rhythm Homeocare. We address the root cause of illness to restore your body's natural balance.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .font-sans {
+            font-family: 'Inter', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .hero-bg {
+            background-image: url('https://images.pexels.com/photos/163186/globuli-medical-bless-you-homeopathy-163186.jpeg?auto=compress&cs=tinysrgb&w=1920');
+            background-size: cover;
+            opacity: 0.25;
+        }
+
+        .header-scrolled {
+            background-color: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .logo {
+            height: 100%;
+            width: 100%;
+        }
+
+        .circle-bullets {
+            list-style-type: circle;
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+    <!-- Header -->
+    <header id="header" class="fixed w-full top-0 z-50 transition-all duration-300 py-4">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <a href="#home" class="flex items-center space-x-3">
+                    <!-- Custom Logo SVG -->
+                    <div class="w-8 h-8 text-emerald-600">
+                        <img src="rhythm-logo.png" class="logo" alt="logo" width="100" height="100">
+                    </div>
+                    <span class="text-2xl font-serif font-medium text-emerald-700">Rhythm</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#home"
+                        class="font-medium text-gray-700 hover:text-emerald-600 transition-colors duration-200">Home</a>
+                    <a href="#services"
+                        class="font-medium text-gray-700 hover:text-emerald-600 transition-colors duration-200">Services</a>
+                    <a href="#about"
+                        class="font-medium text-gray-700 hover:text-emerald-600 transition-colors duration-200">About</a>
+                    <a href="#contact"
+                        class="font-medium text-gray-700 hover:text-emerald-600 transition-colors duration-200">Contact</a>
+                    <a href="#appointment"
+                        class="bg-emerald-600 text-white px-4 py-2 rounded-md font-medium transition-colors duration-200 hover:bg-emerald-700">Book
+                        Appointment</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-800">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white shadow-lg">
+            <div class="container mx-auto px-4 py-4">
+                <nav class="flex flex-col space-y-4">
+                    <a href="#home" class="font-medium text-gray-800 hover:text-emerald-600">Home</a>
+                    <a href="#services" class="font-medium text-gray-800 hover:text-emerald-600">Services</a>
+                    <a href="#about" class="font-medium text-gray-800 hover:text-emerald-600">About</a>
+                    <a href="#contact" class="font-medium text-gray-800 hover:text-emerald-600">Contact</a>
+                    <a href="#appointment"
+                        class="bg-emerald-600 text-white px-4 py-2 rounded-md font-medium text-center hover:bg-emerald-700">Book
+                        Appointment</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative overflow-hidden bg-emerald-50">
+        <div class="absolute inset-0 hero-bg"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 lg:py-32 relative z-10">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-medium text-emerald-900 mb-6">
+                    Natural Healing Through <span class="text-emerald-700">Holistic Homeopathy</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
+                    At Rhythm Homeocare, we restore your body's natural balance through personalized homeopathic
+                    treatments that address the root cause of illness, not just the symptoms.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#appointment"
+                        class="bg-emerald-600 text-white px-6 py-3 rounded-md font-medium text-center hover:bg-emerald-700 transition-colors duration-200 shadow-sm">
+                        Book an Appointment
+                    </a>
+                    <a href="#services"
+                        class="border border-emerald-600 text-emerald-700 px-6 py-3 rounded-md font-medium text-center hover:bg-emerald-50 transition-colors duration-200">
+                        Explore Our Services
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif font-medium text-emerald-900 mb-4">
+                    The Rhythm Difference
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Experience the benefits of our unique approach to homeopathic healing.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div
+                    class="feature-card bg-white p-6 rounded-lg shadow-md text-center transition-transform duration-300 hover:shadow-lg">
+                    <div class="inline-block p-3 bg-emerald-50 rounded-full mb-4">
+                        <svg class="w-10 h-10 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-medium text-emerald-800 mb-2">Personalized Care</h3>
+                    <p class="text-gray-600">Treatments tailored to your unique constitution, symptoms, and health
+                        history.</p>
+                </div>
+
+                <div
+                    class="feature-card bg-white p-6 rounded-lg shadow-md text-center transition-transform duration-300 hover:shadow-lg">
+                    <div class="inline-block p-3 bg-emerald-50 rounded-full mb-4">
+                        <svg class="w-10 h-10 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7.5 3.75H6A2.25 2.25 0 003.75 6v1.5m16.5 0V6A2.25 2.25 0 0018 3.75h-1.5m0 16.5H18A2.25 2.25 0 0020.25 18v-1.5m-16.5 0V18A2.25 2.25 0 006 20.25h1.5">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-medium text-emerald-800 mb-2">Natural Remedies</h3>
+                    <p class="text-gray-600">Pure, natural homeopathic medicines that work with your body's healing
+                        mechanisms.</p>
+                </div>
+
+                <div
+                    class="feature-card bg-white p-6 rounded-lg shadow-md text-center transition-transform duration-300 hover:shadow-lg">
+                    <div class="inline-block p-3 bg-emerald-50 rounded-full mb-4">
+                        <svg class="w-10 h-10 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-medium text-emerald-800 mb-2">Holistic Approach</h3>
+                    <p class="text-gray-600">Addressing mental, emotional, and physical aspects of health for complete
+                        healing.</p>
+                </div>
+
+                <div
+                    class="feature-card bg-white p-6 rounded-lg shadow-md text-center transition-transform duration-300 hover:shadow-lg">
+                    <div class="inline-block p-3 bg-emerald-50 rounded-full mb-4">
+                        <svg class="w-10 h-10 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-medium text-emerald-800 mb-2">Long-term Results</h3>
+                    <p class="text-gray-600">Focus on lasting cures rather than temporary symptom suppression.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif font-medium text-emerald-900 mb-4">
+                    Our Homeopathic Services
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    We offer a range of holistic treatments tailored to your unique constitution and health needs.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Constitutional Treatment -->
+                <div
+                    class="service-card bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg">
+                    <img src="https://images.pexels.com/photos/3993212/pexels-photo-3993212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="Constitutional Treatment" class="w-full h-48 object-cover">
+                    <div class="p-6 bg-emerald-50">
+                        <h3 class="text-xl font-serif font-medium text-emerald-800 mb-2">Constitutional Treatment</h3>
+                        <p class="text-gray-600 mb-4">Comprehensive treatment that addresses your unique constitution,
+                            focusing on both physical and emotional aspects for long-term wellness.</p>
+                        <button onclick="toggleText(this.id)"
+                            class="inline-flex items-center text-emerald-600 font-medium hover:text-emerald-700 transition-colors duration-200"
+                            id="services">Learn More<svg class="ml-2 w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="container mx-auto px-4 sm:px-6 lg:px-8" id="servicestext" style="display: none;">
+                        <div class="max-w-3xl mx-auto">
+                            <div class="prose prose-lg prose-emerald max-w-none">
+                                <p class="mb-6 text-gray-700 leading-relaxed">Constitutional treatment is the
+                                    cornerstone of classical homeopathy. This approach looks at your complete health
+                                    picture—physical symptoms, emotional patterns, mental state, preferences, and
+                                    aversions—to find a remedy that matches your unique constitution.</p>
+                                <p class="mb-6 text-gray-700 leading-relaxed"> Unlike conventional medicine that targets
+                                    specific symptoms, constitutional treatment aims to balance your entire system,
+                                    addressing the root causes of recurring health issues and promoting overall
+                                    wellness.</p>
+                                <p class="text-gray-700 leading-relaxed"> The benefits include:</p>
+                                <ul class="circle-bullets mb-6 text-gray-700 leading-relaxed lg:px-5">
+                                    <li>Long-lasting improvements in both chronic and acute conditions</li>
+                                    <li>Enhanced energy and vitality</li>
+                                    <li>Improved emotional well-being</li>
+                                    <li>Stronger resistance to illness</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Acute Care -->
+                <div
+                    class="service-card bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg">
+                    <img src="https://images.pexels.com/photos/5699516/pexels-photo-5699516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="Acute Care" class="w-full h-48 object-cover">
+                    <div class="p-6 bg-emerald-50">
+                        <h3 class="text-xl font-serif font-medium text-emerald-800 mb-2">Acute Care</h3>
+                        <p class="text-gray-600 mb-4">Targeted homeopathic remedies for short-term illnesses, injuries,
+                            and acute health conditions for rapid relief.</p>
+                        <button onclick="toggleText(this.id)"
+                            class="inline-flex items-center text-emerald-600 font-medium hover:text-emerald-700 transition-colors duration-200"
+                            id="services">Learn More<svg class="ml-2 w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="container mx-auto px-4 sm:px-6 lg:px-8" id="servicestext" style="display: none;">
+                        <div class="max-w-3xl mx-auto">
+                            <div class="prose prose-lg prose-emerald max-w-none">
+                                <p class="mb-6 text-gray-700 leading-relaxed">Our acute care treatments provide gentle
+                                    yet effective relief for sudden illnesses, injuries, and short-term health
+                                    conditions. Using carefully selected homeopathic remedies, we help your body
+                                    activate its natural healing response.</p>
+                                <p class="text-gray-700 leading-relaxed"> Acute care is ideal for conditions such
+                                    as:</p>
+                                <ul class="circle-bullets mb-6 text-gray-700 leading-relaxed lg:px-5">
+                                    <li>Colds, flu, and seasonal allergies</li>
+                                    <li>Digestive upsets and food poisoning</li>
+                                    <li>Minor injuries, sprains, and strains</li>
+                                    <li>Headaches and migraines</li>
+                                    <li>Skin eruptions and allergic reactions</li>
+                                </ul>
+                                <p class="mb-6 text-gray-700 leading-relaxed"> Unlike conventional treatments that often
+                                    suppress symptoms, our homeopathic approach stimulates your body to resolve the
+                                    condition naturally, often resulting in faster recovery without side effects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chronic Disease Management -->
+                <div
+                    class="service-card bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg">
+                    <img src="https://images.pexels.com/photos/7176319/pexels-photo-7176319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="Chronic Disease Management" class="w-full h-48 object-cover">
+                    <div class="p-6 bg-emerald-50">
+                        <h3 class="text-xl font-serif font-medium text-emerald-800 mb-2">Chronic Disease Management</h3>
+                        <p class="text-gray-600 mb-4">Long-term homeopathic care for persistent health issues, working
+                            to reduce symptoms and improve quality of life.</p>
+                        <button onclick="toggleText(this.id)"
+                            class="inline-flex items-center text-emerald-600 font-medium hover:text-emerald-700 transition-colors duration-200"
+                            id="services">Learn More<svg class="ml-2 w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="container mx-auto px-4 sm:px-6 lg:px-8" id="servicestext" style="display: none;">
+                        <div class="max-w-3xl mx-auto">
+                            <div class="prose prose-lg prose-emerald max-w-none">
+                                <p class="mb-6 text-gray-700 leading-relaxed">Chronic health conditions require a
+                                    different approach than acute ailments. Our chronic disease management program
+                                    offers ongoing, personalized care for persistent health challenges that conventional
+                                    medicine often struggles to address effectively.</p>
+                                <p class="text-gray-700 leading-relaxed"> We work with conditions such as:</p>
+                                <ul class="circle-bullets mb-6 text-gray-700 leading-relaxed lg:px-5">
+                                    <li>Autoimmune disorders</li>
+                                    <li>Digestive issues like IBS and Crohn's disease</li>
+                                    <li>Respiratory conditions including asthma and COPD</li>
+                                    <li>Skin disorders such as eczema and psoriasis</li>
+                                    <li>Recurring infections and low immunity</li>
+                                    <li>Chronic fatigue and fibromyalgia</li>
+                                </ul>
+                                <p class="mb-6 text-gray-700 leading-relaxed"> Through carefully selected remedies and
+                                    constitutional support, many patients experience gradual improvement in symptoms,
+                                    reduced medication dependence, and enhanced overall wellbeing.
+
+                                    Our approach emphasizes patient education and self-care strategies to support the
+                                    healing process between appointments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pediatric Care -->
+                <div
+                    class="service-card bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg">
+                    <img src="https://images.pexels.com/photos/3662667/pexels-photo-3662667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="Pediatric Care" class="w-full h-48 object-cover">
+                    <div class="p-6 bg-emerald-50">
+                        <h3 class="text-xl font-serif font-medium text-emerald-800 mb-2">Pediatric Care</h3>
+                        <p class="text-gray-600 mb-4">Gentle homeopathic treatments for infants and children, supporting
+                            healthy development and addressing common childhood ailments.</p>
+                        <button onclick="toggleText(this.id)"
+                            class="inline-flex items-center text-emerald-600 font-medium hover:text-emerald-700 transition-colors duration-200"
+                            id="services1">Learn More<svg class="ml-2 w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="container mx-auto px-4 sm:px-6 lg:px-8" id="services1text" style="display: none;">
+                        <div class="max-w-3xl mx-auto">
+                            <div class="prose prose-lg prose-emerald max-w-none">
+                                <p class="mb-6 text-gray-700 leading-relaxed">Children respond particularly well to
+                                    homeopathy's gentle approach. Our pediatric care program offers safe, non-toxic
+                                    remedies that work with your child's developing system rather than overwhelming it.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed"> Our pediatric homeopathy services
+                                    address:</p>
+                                <ul class="circle-bullets mb-6 text-gray-700 leading-relaxed lg:px-5">
+                                    <li>Common childhood illnesses (ear infections, coughs, colds)</li>
+                                    <li>Teething discomfort and growing pains</li>
+                                    <li>Digestive issues including colic and constipation</li>
+                                    <li>Sleep disturbances</li>
+                                    <li>Behavioral and emotional challenges</li>
+                                    <li>Developmental support</li>
+                                    <li>Allergies and skin conditions</li>
+                                </ul>
+                                <p class="mb-6 text-gray-700 leading-relaxed"> We take time to understand your child's
+                                    unique temperament and symptoms, creating a treatment plan that respects their
+                                    individuality. Parents appreciate our approach that avoids antibiotics and other
+                                    medications with potential side effects whenever possible.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Women's Health -->
+                <div
+                    class="service-card bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg">
+                    <img src="https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="Women's Health" class="w-full h-48 object-cover">
+                    <div class="p-6 bg-emerald-50">
+                        <h3 class="text-xl font-serif font-medium text-emerald-800 mb-2">Women's Health</h3>
+                        <p class="text-gray-600 mb-4">Specialized homeopathic care for women's health concerns across
+                            all life stages, from menstrual issues to menopause.</p>
+                        <button onclick="toggleText(this.id)"
+                            class="inline-flex items-center text-emerald-600 font-medium hover:text-emerald-700 transition-colors duration-200"
+                            id="services1">Learn More<svg class="ml-2 w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="container mx-auto px-4 sm:px-6 lg:px-8" id="services1text" style="display: none;">
+                        <div class="max-w-3xl mx-auto">
+                            <div class="prose prose-lg prose-emerald max-w-none">
+                                <p class="mb-6 text-gray-700 leading-relaxed">Our women's health program offers tailored
+                                    homeopathic support for the unique health challenges women face throughout their
+                                    lives. We understand the complex interplay between hormonal fluctuations, emotional
+                                    wellbeing, and physical health.</p>
+                                <p class="text-gray-700 leading-relaxed"> Our homeopathic approach can help with:</p>
+                                <ul class="circle-bullets mb-6 text-gray-700 leading-relaxed lg:px-5">
+                                    <li>Menstrual irregularities and PMS</li>
+                                    <li>Fertility support and pregnancy preparation</li>
+                                    <li>Pregnancy discomforts and postpartum recovery</li>
+                                    <li>Menopause and perimenopausal symptoms</li>
+                                    <li>Hormonal imbalances and related conditions</li>
+                                    <li>Reproductive health issues</li>
+                                </ul>
+                                <p class="mb-6 text-gray-700 leading-relaxed"> We create personalized treatment plans
+                                    that honor your body's natural rhythms while providing relief from troublesome
+                                    symptoms. Many women find that homeopathy offers a gentler alternative to hormone
+                                    therapies and other conventional treatments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mental Health Support -->
+                <div
+                    class="service-card bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg">
+                    <img src="https://images.pexels.com/photos/897817/pexels-photo-897817.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="Mental Health Support" class="w-full h-48 object-cover">
+                    <div class="p-6 bg-emerald-50">
+                        <h3 class="text-xl font-serif font-medium text-emerald-800 mb-2">Mental Health Support</h3>
+                        <p class="text-gray-600 mb-4">Holistic treatment for anxiety, depression, stress, and other
+                            emotional and psychological concerns using homeopathic principles.</p>
+                        <button onclick="toggleText(this.id)"
+                            class="inline-flex items-center text-emerald-600 font-medium hover:text-emerald-700 transition-colors duration-200"
+                            id="services1">Learn More<svg class="ml-2 w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="container mx-auto px-4 sm:px-6 lg:px-8" id="services1text" style="display: none;">
+                        <div class="max-w-3xl mx-auto">
+                            <div class="prose prose-lg prose-emerald max-w-none">
+                                <p class="mb-6 text-gray-700 leading-relaxed">Mental and emotional wellbeing are
+                                    integral to overall health. Our mental health support program utilizes homeopathy's
+                                    unique ability to address both psychological symptoms and their physical
+                                    manifestations.</p>
+                                <p class="text-gray-700 leading-relaxed">We provide supportive care for:</p>
+                                <ul class="circle-bullets mb-6 text-gray-700 leading-relaxed lg:px-5">
+                                    <li>Anxiety and panic disorders</li>
+                                    <li>Depression and mood fluctuations</li>
+                                    <li>Stress-related conditions</li>
+                                    <li>Grief and trauma recovery</li>
+                                    <li>Sleep disturbances</li>
+                                    <li>Focus and concentration challenges</li>
+                                </ul>
+                                <p class="mb-6 text-gray-700 leading-relaxed"> Homeopathic treatment considers your
+                                    complete emotional landscape, constitutional tendencies, and specific symptom
+                                    patterns. Rather than suppressing or masking emotional symptoms, our remedies gently
+                                    encourage rebalancing at a deep level.
+
+                                    Many patients report not only symptom improvement but also greater emotional
+                                    resilience, clarity of thought, and a stronger sense of overall wellbeing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <main id="about" class="flex-grow">
+        <section class="py-20 bg-emerald-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl font-serif font-medium text-emerald-900 mb-6">About Rhythm Homeocare
+                    </h1>
+                    <p class="text-lg text-gray-700 leading-relaxed">Founded on the principle that true healing comes
+                        from restoring the body's natural rhythm, we provide personalized homeopathic care that
+                        addresses the root cause of illness, not just the symptoms.</p>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h2 class="text-3xl font-serif font-medium text-emerald-900 mb-4">Our Story</h2>
+                            <div class="space-y-4">
+                                <p class="text-gray-700 leading-relaxed">Rhythm Homeocare was established in 2013 by Dr.
+                                    Hetal Padsala with the vision of providing truly individualized care that addresses
+                                    the whole person—mind, body, and spirit. After witnessing the limitations of
+                                    symptom-focused treatments in conventional practice, Dr. Padsala sought a more
+                                    comprehensive approach that could offer lasting healing.</p>
+                                <p class="text-gray-700 leading-relaxed">Our clinic has known for homeopathic excellence
+                                    and expertise across diverse health conditions and age groups. We've helped many
+                                    patients find relief from both acute and chronic conditions using gentle, natural
+                                    approaches.</p>
+                            </div>
+                        </div>
+                        <div class="relative"><img
+                                src="https://images.pexels.com/photos/4167541/pexels-photo-4167541.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2"
+                                alt="Rhythm Homeopathy Clinic entrance" class="rounded-lg shadow-lg">
+                            <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-emerald-100 rounded-lg -z-10"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-serif font-medium text-emerald-900 mb-8 text-center">Our Philosophy</h2>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="text-xl font-medium text-emerald-800 mb-3">The Vital Force</h3>
+                                <p class="text-gray-700 leading-relaxed">We believe that each person possesses an innate
+                                    healing energy—what homeopathy calls the vital force. This force naturally maintains
+                                    health and balance when properly supported. Our treatments aim to stimulate and
+                                    strengthen this vital force rather than suppressing symptoms or forcing artificial
+                                    changes.</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-medium text-emerald-800 mb-3">Individualized Care</h3>
+                                <p class="text-gray-700 leading-relaxed">No two patients are alike, even when they have
+                                    the same diagnosis. We take time to understand your unique symptom patterns,
+                                    constitutional tendencies, and health history. This personalized approach allows us
+                                    to select remedies that resonate with your specific needs rather than applying a
+                                    one-size-fits-all solution.</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-medium text-emerald-800 mb-3">Holistic Healing</h3>
+                                <p class="text-gray-700 leading-relaxed">We recognize that physical symptoms are often
+                                    connected to emotional states, mental patterns, and lifestyle factors. Our approach
+                                    addresses all aspects of your wellbeing, creating a foundation for comprehensive
+                                    healing rather than isolated symptom management.</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-medium text-emerald-800 mb-3">Gentle, Natural Approaches</h3>
+                                <p class="text-gray-700 leading-relaxed">Our treatments use highly diluted natural
+                                    substances that stimulate healing without side effects or toxicity. This gentle
+                                    approach is suitable for patients of all ages, including infants, pregnant women,
+                                    and the elderly, and can safely complement conventional medical treatments when
+                                    needed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-serif font-medium text-emerald-900 mb-8 text-center">Meet Our Practitioners
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div
+                        class="bg-white border border-gray-100 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+                        <img src="https://images.pexels.com/photos/5407206/pexels-photo-5407206.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600"
+                            alt="Dr. Ravindra Padsala" class="w-full h-64 object-cover object-center">
+                        <div class="p-6">
+                            <h3 class="text-xl font-serif font-medium text-emerald-800 mb-1">Dr. Hetal Padsala</h3>
+                            <p class="text-emerald-600 mb-4">Founder &amp; Lead Homeopath</p>
+                            <h4 class="text-sm font-medium text-gray-700 mb-2">Specialties:</h4>
+                            <ul class="mb-4 flex flex-wrap gap-2">
+                                <li class="text-sm bg-emerald-50 text-emerald-700 px-3 py-1 rounded-full">Constitutional
+                                    Homeopathy</li>
+                                <li class="text-sm bg-emerald-50 text-emerald-700 px-3 py-1 rounded-full">Chronic
+                                    Disease Management</li>
+                                <li class="text-sm bg-emerald-50 text-emerald-700 px-3 py-1 rounded-full">Autoimmune
+                                    Conditions</li>
+                            </ul>
+                            <div class="text-gray-600 mb-4">
+                                <p class="leading-relaxed">Dr. Hetal Padsala brings over 20 years of homeopathic
+                                    expertise to Rhythm Clinic. With degrees in both conventional medicine and classical
+                                    homeopathy, she bridges traditional and holistic approaches to health.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Appointment Section -->
+    <main id="appointment" class="flex-grow">
+        <section class="py-20 bg-emerald-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl font-serif font-medium text-emerald-900 mb-6">Book an
+                        Appointment</h1>
+                    <p class="text-lg text-gray-700 leading-relaxed">Take the first step in your healing journey by
+                        scheduling a consultation with one of our experienced homeopaths.</p>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                        <h2 class="text-2xl font-serif font-medium text-emerald-900 mb-6">Request Appointment (EveryDay: 9:00 AM - 8:00 PM)</h2>
+                        <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                            <form id='appointment-form' class="space-y-6" method="post" action=''>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full
+                                            Name</label>
+                                        <input type="text" id="name" name="name" required=""
+                                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                                            placeholder="Your name" value="">
+                                    </div>
+                                    <div>
+                                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email
+                                            Address</label>
+                                        <input type="email" id="email" name="email" required=""
+                                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                                            placeholder="your.email@example.com" value="">
+                                    </div>
+                                    <div>
+                                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone
+                                            Number</label>
+                                        <input type="tel" id="phone" name="phone" required=""
+                                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                                            placeholder="(123) 456-7890" value="">
+                                    </div>
+                                    <div>
+                                        <label for="type"
+                                            class="block text-sm font-medium text-gray-700 mb-1">Appointment
+                                            Type</label>
+                                        <select id="type" name="type" required=""
+                                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+                                            <option value="">Select appointment type</option>
+                                            <option value="Initial Consultation">Initial Consultation</option>
+                                            <option value="Follow-up Visit">Follow-up Visit</option>
+                                            <option value="Acute Care">Acute Care</option>
+                                            <option value="Pediatric Consultation">Pediatric Consultation</option>
+                                            <option value="Women's Health">Women's Health</option>
+                                            <option value="Chronic Disease Management">Chronic Disease Management
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div><label for="date"
+                                            class="block text-sm font-medium text-gray-700 mb-1">Preferred
+                                            Date</label><input id="date" name="date" required="" type="date"
+                                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+                                    </div>
+                                    <div><label for="time"
+                                            class="block text-sm font-medium text-gray-700 mb-1">Preferred
+                                            Time</label><input id="time" name="time" required="" type="time"
+                                            value="18:00"
+                                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+                                    </div>
+                                </div>
+                                <div><label for="message" class="block text-sm font-medium text-gray-700 mb-1">Health
+                                        Concerns</label><textarea id="message" name="message" rows="4"
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                                        placeholder="Briefly describe your health concerns or reason for visit"></textarea>
+                                </div>
+                                <div><button type="submit"
+                                        class="w-full bg-emerald-600 text-white py-3 px-4 rounded-md font-medium hover:bg-emerald-700 transition-colors duration-200 disabled:opacity-70">Schedule
+                                        Appointment</button></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-serif font-medium text-emerald-900 mb-6">What to Expect</h2>
+                        <div class="bg-emerald-50 rounded-lg p-6 md:p-8 shadow-sm">
+                            <div class="space-y-6">
+                                <div>
+                                    <h3 class="text-lg font-medium text-emerald-800 mb-2">Before Your Visit</h3>
+                                    <p class="text-gray-600 leading-relaxed">After scheduling, you'll receive an
+                                        email confirmation with a health history form to complete before your
+                                        appointment. This helps us make the most of our time together. Please bring
+                                        a list of any medications, supplements, or remedies you currently take.</p>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-medium text-emerald-800 mb-2">During Your Initial
+                                        Consultation</h3>
+                                    <p class="text-gray-600 leading-relaxed">Your homeopath will conduct a
+                                        comprehensive interview, exploring not just your physical symptoms but also
+                                        your emotional state, sleep patterns, food preferences, and more. This
+                                        detailed information helps us identify the remedy that best matches your
+                                        unique constitution.</p>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-medium text-emerald-800 mb-2">After Your Appointment
+                                    </h3>
+                                    <p class="text-gray-600 leading-relaxed">You'll receive personalized treatment
+                                        recommendations, including homeopathic remedies, dosage instructions, and
+                                        any lifestyle suggestions. We'll schedule a follow-up visit typically 4-6
+                                        weeks later to evaluate your progress and make any necessary adjustments.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-medium text-emerald-800 mb-2">Insurance and Payment</h3>
+                                    <p class="text-gray-600 leading-relaxed">Payment is due at the time of service.
+                                        We accept all major credit cards, HSA/FSA cards, and cash. We provide
+                                        detailed receipts for insurance submission if your plan covers
+                                        out-of-network holistic services. Many HSA/FSA accounts cover homeopathic
+                                        consultations.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-serif font-medium text-emerald-900 mb-8 text-center">Appointment Types
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div
+                            class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+                            <h3 class="text-xl font-medium text-emerald-800 mb-3">Initial Consultation</h3>
+                            <p class="text-gray-600 mb-3">A comprehensive first visit to understand your health
+                                history, current concerns, and constitutional factors.</p>
+                            <ul class="space-y-2 mb-4">
+                                <li class="flex items-start"><svg class="w-5 h-5 text-emerald-500 mt-0.5 mr-2"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg><span class="text-gray-600">90-120 minute detailed assessment</span></li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-emerald-500 mt-0.5 mr-2"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg><span class="text-gray-600">Personalized treatment plan</span></li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-emerald-500 mt-0.5 mr-2"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg><span class="text-gray-600">Initial remedy recommendation</span></li>
+                            </ul>
+                            <div class="text-xl font-medium text-emerald-900 mb-4"></div>
+                        </div>
+                        <div
+                            class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+                            <h3 class="text-xl font-medium text-emerald-800 mb-3">Follow-up Visit</h3>
+                            <p class="text-gray-600 mb-3">Regular check-ins to assess your progress, adjust remedies
+                                if needed, and address any new concerns.</p>
+                            <ul class="space-y-2 mb-4">
+                                <li class="flex items-start"><svg class="w-5 h-5 text-emerald-500 mt-0.5 mr-2"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg><span class="text-gray-600">2-4 weeks interval</span></li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-emerald-500 mt-0.5 mr-2"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg><span class="text-gray-600">45-60 minute evaluation</span></li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-emerald-500 mt-0.5 mr-2"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg><span class="text-gray-600">Progress assessment</span></li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-emerald-500 mt-0.5 mr-2"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg><span class="text-gray-600">Treatment plan adjustments</span></li>
+                            </ul>
+                            <div class="text-xl font-medium text-emerald-900 mb-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 md:py-20 bg-emerald-700 text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto text-center">
+                    <svg class="w-16 h-16 mx-auto mb-6 text-emerald-200" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                        </path>
+                    </svg>
+                    <h2 class="text-3xl md:text-4xl font-serif font-medium mb-6">
+                        Ready to Begin Your Healing Journey?
+                    </h2>
+                    <p class="text-lg text-emerald-100 mb-8 leading-relaxed">
+                        Schedule your consultation today and take the first step towards natural, holistic healing with
+                        our
+                        experienced homeopaths.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="tel:+14374631324"
+                            class="bg-white text-emerald-700 px-6 py-3 rounded-md font-medium hover:bg-emerald-50 transition-colors duration-200 shadow-sm">
+                            Call Now: +1 437-463-1324
+                        </a>
+                        <a href="mailto:rhythmhomeocare@gmail.com"
+                            class="border border-white text-white px-6 py-3 rounded-md font-medium hover:bg-emerald-600 transition-colors duration-200">
+                            Email Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 pt-16 pb-8 border-t border-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Clinic Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-8 h-8 text-emerald-600">
+                            <img src="rhythm-logo.png" class="logo" alt="logo" width="100" height="100">
+                        </div>
+                        <span class="text-xl font-serif font-medium text-emerald-800">Rhythm</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Holistic healing through personalized homeopathic treatments. Restoring your natural rhythm.
+                    </p>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home"
+                                class="text-gray-600 hover:text-emerald-600 transition-colors duration-200">Home</a>
+                        </li>
+                        <li><a href="#services"
+                                class="text-gray-600 hover:text-emerald-600 transition-colors duration-200">Services</a>
+                        </li>
+                        <li><a href="#about"
+                                class="text-gray-600 hover:text-emerald-600 transition-colors duration-200">About</a>
+                        </li>
+                        <li><a href="#contact"
+                                class="text-gray-600 hover:text-emerald-600 transition-colors duration-200">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services"
+                                class="text-gray-600 hover:text-emerald-600 transition-colors duration-200">Constitutional
+                                Treatment</a></li>
+                        <li><a href="#services"
+                                class="text-gray-600 hover:text-emerald-600 transition-colors duration-200">Acute
+                                Care</a></li>
+                        <li><a href="#services"
+                                class="text-gray-600 hover:text-emerald-600 transition-colors duration-200">Chronic
+                                Disease Management</a></li>
+                        <li><a href="#services"
+                                class="text-gray-600 hover:text-emerald-600 transition-colors duration-200">Pediatric
+                                Care</a></li>
+                        <li><a href="#services"
+                                class="text-gray-600 hover:text-emerald-600 transition-colors duration-200">Women's
+                                Health</a></li>
+                        <li><a href="#services"
+                                class="text-gray-600 hover:text-emerald-600 transition-colors duration-200">Mental
+                                Health Support</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div id="contact">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-6 h-6 text-emerald-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                </path>
+                            </svg>
+                            <span class="text-gray-600">CHO Reg. no.: 15706</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-6 h-6 text-emerald-600 mt-0.5 flex-shrink-0" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            <span class="text-gray-600">EveryDay: 9:00 AM - 8:00 PM</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <svg class="h-5 w-5 text-emerald-600 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span class="text-gray-600">Maple, ON L6A 3J2, Canada</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="h-5 w-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                </path>
+                            </svg>
+                            <a href="tel:+14374631324">
+                                <span class="text-gray-600">+1 437-463-1324</span>
+                            </a>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="h-5 w-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <a href="mailto:rhythmhomeocare@gmail.com">
+                                <span class="text-gray-600">rhythmhomeocare@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-200">
+                <p class="text-gray-500 text-center text-sm">
+                    © 2025 Rhythm Homeocare. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Header scroll effect
+        const header = document.getElementById('header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        });
+
+        function toggleText(buttonId) {
+            const textElements = document.querySelectorAll("#" + buttonId + "text");
+            textElements.forEach(textElement => {
+                if (textElement.style.display === "none") {
+                    textElement.style.display = "block"; // Or "inline", "flex", etc., depending on desired layout
+                } else {
+                    textElement.style.display = "none";
+                }
+            });
+        };
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.remove('active');
+                }
+            });
+        });
+
+
+
+        // Appointment form submission
+        const appointmentForm = document.getElementById('appointment-form');
+        appointmentForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Get form data
+            const appointmentFormData = new FormData(this);
+            // Simple form validation
+            if (!appointmentFormData.get('name') || !appointmentFormData.get('email') || !appointmentFormData.get('phone') || !appointmentFormData.get('type') || !appointmentFormData.get('date') || !appointmentFormData.get('time')) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            // Simulate form submission
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            const action = 'https://script.google.com/macros/s/AKfycby9cRYCx_fvQBwAfnlkD2Agmlbt4MD7yV1CKf-RZoyTRRGVfFKlMg__5_W1Eo1a_0A8Bg/exec';
+            fetch(action, {
+                method: 'POST',
+                body: appointmentFormData,
+            }).then(() => {
+                setTimeout(() => {
+                    this.reset();
+                    document.getElementById('date').valueAsDate = tomorrow;
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    alert('Thank you for your message! We\'ll get back to you soon.');
+                }, 10);
+            })
+        });
+
+        const today = new Date();
+        const tomorrow = new Date(today);
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        document.getElementById('date').valueAsDate = tomorrow;
+
+    </script>
+</body>
+
+</html>
